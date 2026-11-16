@@ -12,6 +12,10 @@ Outils gratuits, utilisables dans le navigateur, pour les communes, des deux cô
 - **Vos données restent sur le poste** : le simulateur genevois est un fichier HTML autonome qui ne se connecte à rien.
 - **Gratuits, en échange de vos retours** : avis et critiques constructives sont les bienvenus à contact@glc-admin.com.
 
+## Signaler une erreur
+
+Ouvrez une « Issue » : https://github.com/GLC-administration/GLC-administration.github.io/issues/new . Précisez la commune, l'onglet concerné et ce qui vous semble inexact.
+
 ## Organisation des fichiers
 
 Le site publié se trouve dans le dossier `docs/` (dossier de publication GitHub Pages).

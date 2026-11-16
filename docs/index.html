@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GLC Admin · Outils pour les communes du Grand Genève</title>
-<meta name="description" content="Outils gratuits pour les communes du Grand Genève, en Suisse et en France : simulateurs budget 2027. Par GLC Admin, externalisation administrative, comptable et RH.">
+<title>GLC Admin · L'IA et l'automatisation au service des petites structures</title>
+<meta name="description" content="GLC Admin rend l'IA et l'automatisation accessibles aux communes, PME et associations, pour soulager l'administratif, la comptabilité et les RH. Premier outil : simulateur budget 2027 des communes genevoises.">
 <link rel="canonical" href="https://glc-administration.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GLC Admin">
 <meta property="og:locale" content="fr_CH">
 <meta property="og:url" content="https://glc-administration.github.io/">
-<meta property="og:title" content="Simulateurs budget 2027 pour les communes du Grand Genève · GLC Admin">
-<meta property="og:description" content="Deux outils gratuits pour préparer les budgets 2027 : communes genevoises et collectivités françaises. Les données restent dans votre navigateur.">
+<meta property="og:title" content="Simulateur budget 2027 des communes genevoises · GLC Admin">
+<meta property="og:description" content="Un outil offert aux 45 communes genevoises pour mesurer l'effet du budget cantonal 2027. L'IA et l'automatisation doivent aussi profiter aux petites structures.">
 <meta property="og:image" content="https://glc-administration.github.io/assets/apercu-partage.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -95,6 +95,16 @@ footer a{color:#cfc7bb}
 .sommaire a{font-size:14px;border:1px solid var(--ligne);background:var(--blanc);padding:7px 14px;border-radius:20px;text-decoration:none;color:var(--encre)}
 .sommaire a:hover{border-color:var(--bronze);color:var(--bronze)}
 @media (max-width:820px){.outil-large{grid-template-columns:1fr;padding:22px}}
+.principes{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.principes div{background:var(--blanc);border:1px solid var(--ligne);border-radius:10px;padding:20px}
+.principes b{font-family:var(--serif);font-size:17px;display:block;margin-bottom:6px}
+.principes p{margin:0;font-size:14px;color:var(--gris)}
+.citation{font-family:var(--serif);font-size:22px;line-height:1.45;border-left:3px solid var(--bronze);padding:4px 0 4px 20px;margin:0 0 34px;max-width:760px}
+.probleme{font-size:15.5px;background:#fbf5ee;border-radius:8px;padding:14px 16px;margin:0 0 14px}
+.exemples{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.exemples span{background:var(--blanc);border:1px solid var(--ligne);border-radius:20px;padding:7px 14px;font-size:14px}
+@media (max-width:900px){.principes{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.principes{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -105,8 +115,8 @@ footer a{color:#cfc7bb}
       <span id="logo-texte" hidden>GLC <span>Admin</span></span>
     </a>
     <nav aria-label="Navigation principale">
-      <a href="#outils">Les outils</a>
       <a href="#demarche">La démarche</a>
+      <a href="#outil">L'outil</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -115,61 +125,40 @@ footer a{color:#cfc7bb}
 <main>
   <div class="hero">
     <div class="wrap">
-      <p class="surtitre">GLC Admin · Grand Genève</p>
-      <h1>Des outils simples et gratuits pour les communes, des deux côtés de la frontière.</h1>
-      <p class="lead">J'accompagne les petites sociétés, les communes et les associations en prenant en charge leurs tâches administratives, comptables et RH. Je partage ici des outils pratiques, pensés pour faire gagner du temps, sans abonnement et sans que vos données quittent votre poste.</p>
-      <a class="btn plein" href="#outils">Découvrir les outils</a>
+      <p class="surtitre">GLC Admin · Administratif, comptabilité, RH · Grand Genève</p>
+      <h1>L'IA et l'automatisation doivent aussi profiter aux petites structures.</h1>
+      <p class="lead">Aujourd'hui, ces outils profitent surtout aux grandes entreprises. Pourtant, ce sont souvent les petites communes, les PME et les associations qui manquent le plus de temps et de moyens. Je conçois des outils simples et accessibles, pour alléger leur charge administrative et rendre du temps aux personnes : aux habitants, aux clients, aux bénévoles.</p>
+      <a class="btn plein" href="#outil">Découvrir le premier outil</a>
       <a class="btn vide" href="#contact">Parler de votre besoin</a>
-      <div class="engagements">
-        <div><b>Vos données restent chez vous</b><p>Les outils fonctionnent dans le navigateur. Rien n'est envoyé sur internet.</p></div>
-        <div><b>Adaptés à chaque pays</b><p>Règles, plans comptables et vocabulaire : chaque outil parle le langage des collectivités suisses ou françaises.</p></div>
-        <div><b>Gratuits, en échange de vos retours</b><p>Utilisez-les librement ; vos avis et critiques constructives les rendent plus justes pour tous.</p></div>
-      </div>
     </div>
   </div>
 
-  <section id="outils">
+  <section id="demarche">
     <div class="wrap">
-      <h2>Les outils</h2>
-      <p class="intro">Deux simulateurs pour préparer les budgets 2027, l'un pour les collectivités françaises, l'autre pour les communes genevoises.</p>
-      <div class="sommaire">
-        <a href="#outil-france">France · Du PLF 2027 au BP 2027</a>
-        <a href="#outil-geneve">Genève · Simulateur budget 2027</a>
+      <h2>La démarche</h2>
+      <p class="citation">Que personne ne reste à l'écart de ces outils faute de budget ou de compétences techniques. Partir d'une petite tâche qui pèse, et la rendre plus légère.</p>
+      <div class="principes">
+        <div><b>Soulager, pas remplacer</b><p>L'outil prépare, calcule et met en forme. Les personnes gardent la décision, le contrôle et le lien humain.</p></div>
+        <div><b>Accessible à tous</b><p>Pas d'abonnement, pas de serveur, pas de compétences techniques : un outil qui s'ouvre dans le navigateur, à la portée d'une petite commune ou d'une association.</p></div>
+        <div><b>Partagé, pas confisqué</b><p>Quand c'est possible, les outils sont proposés gratuitement et améliorés grâce aux retours de celles et ceux qui les utilisent.</p></div>
+        <div><b>Respect de vos données</b><p>Rien n'est envoyé sur internet. Les chiffres saisis restent sur votre poste.</p></div>
       </div>
+    </div>
+  </section>
 
-      <article class="outil-large" id="outil-france">
+  <section id="outil">
+    <div class="wrap">
+      <h2>Premier outil : le budget 2027 des communes genevoises</h2>
+      <p class="intro">Un exemple concret de cette démarche, offert aux 45 communes genevoises, des plus grandes aux plus petites, pendant la préparation de leur budget. Les petites communes, sans service financier étoffé, sont celles qui en ont le plus besoin.</p>
+      <article class="outil-large">
         <div class="presentation">
-          <span class="num">Outil partenaire · France</span>
-          <h3>Du PLF 2027 au BP 2027</h3>
-          <p class="pour"><span class="tag">Finances</span> Communes et intercommunalités françaises</p>
-          <p>Le projet de loi de finances 2027 va peser sur le budget des collectivités. Ce simulateur, conçu par Sandrine Gérard, spécialiste des finances locales dans le Loiret, en estime l'effet commune par commune, à partir des comptes déjà publiés.</p>
-          <p>Il suffit de rechercher sa commune ou son intercommunalité, puis de compléter avec ses chiffres 2026.</p>
-          <p class="credit">Outil créé et mis à jour par Sandrine Gérard, partagé ici avec son accord. Il a inspiré le simulateur genevois présenté ci-dessous.</p>
-        </div>
-        <div>
-          <h4>Ce qu'il fait</h4>
-          <ul>
-            <li>Estime l'effet du PLF 2027 et du décret CNRACL sur l'épargne brute et le FCTVA.</li>
-            <li>Comptes 2025 préchargés pour chaque commune et intercommunalité.</li>
-            <li>Perspective BP 2027, prospective 2027-2029.</li>
-            <li>Note de synthèse pour les élus et le débat d'orientation budgétaire.</li>
-          </ul>
-          <div class="actions">
-            <a class="btn plein" href="outils/simulateur-plf-2027-france/">Essayer l'outil</a>
-            <a class="btn vide" href="https://sandrineanne.github.io/Du-PLF-2027-au-BP-2027/communes-intercommunalites.html" target="_blank" rel="noopener">Site de l'autrice ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="outil-large" id="outil-geneve">
-        <div class="presentation">
-          <span class="num">Outil GLC Admin · Suisse</span>
-          <h3>Simulateur budget 2027 des communes genevoises</h3>
-          <p class="pour"><span class="tag">Finances</span> Les 45 communes genevoises</p>
-          <p>Le projet de budget cantonal 2027 prévoit de faire financer par les communes 20 % de la péréquation intercantonale, soit 134 millions. J'ai conçu ce simulateur pour que chaque commune mesure ce que cela représente pour elle, et vérifie si son budget 2027 reste dans les règles.</p>
-          <p>Les données publiques des 45 communes sont déjà intégrées. Il suffit d'ajouter son budget, par exemple en le copiant depuis Excel.</p>
+          <span class="num">Outil gratuit · Communes genevoises</span>
+          <h3>Simulateur budget 2027</h3>
+          <p class="pour"><span class="tag">Finances communales</span> Secrétariats généraux, services financiers, exécutifs</p>
+          <p class="probleme"><b>Le problème :</b> chaque automne, les communes doivent mesurer l'effet des décisions cantonales sur leur budget, souvent à la main et dans des délais serrés. En 2027, le canton prévoit de leur faire financer 20 % de la péréquation intercantonale, soit 134 millions.</p>
+          <p><b>Ce que fait l'outil :</b> il chiffre en quelques minutes la part de votre commune, vérifie votre budget au regard des règles d'équilibre et prépare une note de synthèse pour l'exécutif. Les données publiques des 45 communes sont déjà intégrées.</p>
           <div class="avis">
-            <b>Gratuit, en échange de votre avis.</b> Cet outil est en phase de relecture. Un avis ou une critique constructive m'aide à le rendre plus juste pour toutes les communes.
+            <b>Gratuit, en échange de votre avis.</b> L'outil est en phase de relecture. Un avis ou une critique constructive m'aide à le rendre plus juste pour toutes les communes.
             <ul>
               <li><a href="outils/simulateur-budget-2027/dossier-relecture-comptable.pdf" download>Dossier de relecture (PDF)</a> : données, formules et questions ouvertes</li>
               <li><a href="outils/simulateur-budget-2027/jeu-essai-plan-les-ouates.json" download>Budget fictif de test (.json)</a>, à charger avec le bouton « Ouvrir… »</li>
@@ -177,43 +166,45 @@ footer a{color:#cfc7bb}
           </div>
         </div>
         <div>
-          <h4>Ce qu'il fait</h4>
+          <h4>En détail</h4>
           <ul>
-            <li>Estime la part de la commune en francs, par habitant et en centimes additionnels équivalents.</li>
+            <li>Part estimée de la commune en francs, par habitant et en centimes additionnels équivalents.</li>
             <li>Saisie du budget par natures MCH2, collage direct depuis Excel.</li>
             <li>Lecture des règles d'équilibre de la LAC, dont la dérogation RFFA.</li>
-            <li>Prospective 2027-2030 et note de synthèse pour l'exécutif.</li>
+            <li>Prospective 2027-2030 et note de synthèse prête à imprimer.</li>
           </ul>
           <div class="actions">
             <a class="btn plein" href="outils/simulateur-budget-2027/">Essayer l'outil</a>
             <a class="btn vide" href="mailto:contact@glc-admin.com?subject=Avis%20sur%20le%20simulateur%20budget%202027&body=Bonjour%20Ga%C3%ABlle%2C%0A%0AMa%20commune%20ou%20structure%20%3A%20%0AMa%20fonction%20%3A%20%0A%0ACe%20qui%20fonctionne%20bien%20%3A%20%0A%0ACe%20qui%20est%20%C3%A0%20corriger%20ou%20%C3%A0%20am%C3%A9liorer%20%3A%20%0A%0A">Donner mon avis</a>
           </div>
-          <p class="note" style="margin-top:10px">Vous avez un compte GitHub ? <a href="https://github.com/GLC-administration/GLC-administration.github.io/issues/new" target="_blank" rel="noopener">Signalez une erreur ou une amélioration</a>, publiquement et en quelques clics.</p>
-          <p class="note" style="margin-top:10px">Pas de messagerie installée ? Écrivez-moi à <b>contact@glc-admin.com</b> en indiquant votre commune et vos remarques.</p>
-          <p class="note" style="margin-top:10px">Données publiques au 12.11.2026 · estimations sur un projet de loi non adopté</p>
+          <p class="note" style="margin-top:10px">Vous avez un compte GitHub ? <a href="https://github.com/GLC-administration/GLC-administration.github.io/issues/new" target="_blank" rel="noopener">Signalez une erreur ou une amélioration</a>.</p>
+          <p class="note">Pas de messagerie installée ? Écrivez à <b>contact@glc-admin.com</b>.</p>
+          <p class="note">Données publiques au 12.11.2026 · estimations sur un projet de loi non adopté.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <section id="demarche">
+  <section>
     <div class="wrap">
-      <h2>La démarche</h2>
-      <p class="intro">Chaque outil part d'une tâche réelle qui prend trop de temps. Je l'adapte à votre fonctionnement, je l'installe et je forme l'équipe.</p>
-      <div class="etapes">
-        <div><b>Échange</b><p>Nous identifions la tâche répétitive ou le point de friction.</p></div>
-        <div><b>Adaptation</b><p>J'ajuste l'outil à vos règles, vos listes et vos modèles.</p></div>
-        <div><b>Installation</b><p>Mise en place sur vos postes, avec une configuration partagée.</p></div>
-        <div><b>Prise en main</b><p>Courte formation et suivi pour les ajustements.</p></div>
+      <h2>Et dans votre structure ?</h2>
+      <p class="intro">Commune, PME ou association : l'administratif, la comptabilité et les RH sont mon métier depuis plus de 15 ans à Genève. La même démarche peut alléger d'autres tâches qui reviennent sans cesse, par exemple :</p>
+      <div class="exemples">
+        <span>Classer et nommer les documents scannés</span>
+        <span>Préparer les relances de factures</span>
+        <span>Contrôler les heures avant les salaires</span>
+        <span>Suivre les échéances administratives</span>
+        <span>Mettre en forme des rapports récurrents</span>
       </div>
+      <p class="intro" style="margin-top:22px">Décrivez-moi la vôtre : nous verrons ensemble si un outil simple peut vous soulager, et à quel coût raisonnable.</p>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Un besoin dans votre administration ?</h2>
-      <p>Décrivez-moi la tâche qui vous prend le plus de temps. Je vous réponds avec une proposition concrète. Adresse : <b style="color:#fff">contact@glc-admin.com</b></p>
-      <p><a class="btn plein" href="mailto:contact@glc-admin.com?subject=Outils%20administratifs">Écrire à contact@glc-admin.com</a></p>
+      <h2>Parlons de votre besoin</h2>
+      <p>Quelle tâche vous éloigne trop souvent de l'essentiel ? Écrivez-moi, je vous réponds avec une proposition concrète et adaptée à vos moyens. Adresse : <b style="color:#fff">contact@glc-admin.com</b></p>
+      <p><a class="btn plein" href="mailto:contact@glc-admin.com?subject=Un%20besoin%20administratif">Écrire à contact@glc-admin.com</a></p>
       <p style="font-size:14px">Site : <a class="mail" href="https://glc-admin.com">glc-admin.com</a></p>
     </div>
   </section>
@@ -222,7 +213,7 @@ footer a{color:#cfc7bb}
 <footer>
   <div class="wrap">
     <span>© 2026 GLC Admin · Gaëlle Le Cadet · Grand Genève</span>
-    <span>Outils indépendants, sans lien avec les administrations cantonales, communales ou de l'Etat français.</span>
+    <span>Outil indépendant, sans lien avec l'Etat de Genève ni l'Association des communes genevoises.</span>
   </div>
 </footer>
 </body>

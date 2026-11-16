@@ -1,21 +1,24 @@
-# GLC Admin · Boîte à outils administrative
+# GLC Admin · Outils pour les communes du Grand Genève
 
-Applications sur mesure, utilisables en local dans le navigateur, pour alléger l'administratif des communes, des administrations et des associations du Grand Genève.
-
-## Outil
+Outils gratuits, utilisables dans le navigateur, pour les communes, des deux côtés de la frontière.
 
 | Outil | Pour qui | Lien |
 |---|---|---|
-| Simulateur budget 2027 | Services financiers des communes genevoises | [outils/simulateur-budget-2027](outils/simulateur-budget-2027/) |
+| Du PLF 2027 au BP 2027 (outil partenaire de Sandrine Gérard) | Communes et intercommunalités françaises | [outils/simulateur-plf-2027-france](outils/simulateur-plf-2027-france/) |
+| Simulateur budget 2027 | Les 45 communes genevoises | [outils/simulateur-budget-2027](outils/simulateur-budget-2027/) |
 
 ## Principes
 
-- **Vos données restent sur le poste :** chaque outil est un fichier HTML autonome. Il fonctionne hors ligne et n'envoie rien.
-- **Rien à installer :** l'outil s'ouvre dans Microsoft Edge ou Google Chrome.
-- **Configuration partagée :** les réglages s'exportent et s'importent en .json.
+- **Vos données restent sur le poste** : le simulateur genevois est un fichier HTML autonome qui ne se connecte à rien.
+- **Gratuits, en échange de vos retours** : avis et critiques constructives sont les bienvenus à contact@glc-admin.com.
 
-## Contact
+## Organisation des fichiers
 
-GLC Admin · Gaëlle Le Cadet · contact@glc-admin.com · https://glc-admin.com
+```
+index.html                                  page d'accueil (tous les outils)
+assets/logo-glc-admin.png                   logo (à déposer)
+outils/simulateur-budget-2027/              simulateur genevois, dossier de relecture, budget fictif
+outils/simulateur-plf-2027-france/          page partenaire (outil de Sandrine Gérard)
+```
 
-© 2026 GLC Admin. Tous droits réservés. Les outils présentés ici sont des démonstrations. Leur adaptation, leur installation et leur usage en production font l'objet d'une offre.
+© 2026 GLC Admin. Tous droits réservés. L'outil « Du PLF 2027 au BP 2027 » reste la propriété de son autrice.

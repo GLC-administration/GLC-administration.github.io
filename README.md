@@ -23,6 +23,6 @@ docs/outils/simulateur-budget-2027/              simulateur genevois, dossier de
 docs/outils/simulateur-plf-2027-france/          page partenaire (outil de Sandrine Gérard)
 ```
 
-Site en ligne : https://glc-administration.github.io/TEST-Communes_Geneve_Budget-2027/
+Site en ligne : https://glc-administration.github.io/
 
 © 2026 GLC Admin. Tous droits réservés. L'outil « Du PLF 2027 au BP 2027 » reste la propriété de son autrice.
